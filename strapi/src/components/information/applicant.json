@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_information_applicants",
+  "info": {
+    "displayName": "applicant",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female",
+        "notprovided"
+      ],
+      "default": "notprovided"
+    },
+    "isInsuredAnnuitant": {
+      "type": "boolean"
+    },
+    "isOwner": {
+      "type": "boolean"
+    },
+    "smoker": {
+      "type": "boolean"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    }
+  }
+}

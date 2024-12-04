@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_information_subscription_settings",
+  "info": {
+    "displayName": "subscriptionSettings",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stripeCustomer": {
+      "type": "string"
+    },
+    "cardBrand": {
+      "type": "string"
+    },
+    "cardLastFour": {
+      "type": "string"
+    },
+    "planId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subscriptionplan.subscriptionplan"
+    },
+    "pPlanId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subscriptionplan.subscriptionplan"
+    },
+    "stripeSubscriptionPlanId": {
+      "type": "string"
+    }
+  }
+}

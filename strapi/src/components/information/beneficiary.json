@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_information_beneficiaries",
+  "info": {
+    "displayName": "beneficiary",
+    "icon": "cloud",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "homePhone": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "information.address"
+    },
+    "relationshipId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::relationship.relationship"
+    }
+  }
+}

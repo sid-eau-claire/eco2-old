@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "singularName": "article",
+    "pluralName": "articles",
+    "displayName": "article",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "menu": {
+      "type": "enumeration",
+      "enum": [
+        "guidelines",
+        "marketing",
+        "resources",
+        "education"
+      ]
+    },
+    "subMenu": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "seq": {
+      "type": "integer"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "showInDashboard": {
+      "type": "boolean",
+      "default": false
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

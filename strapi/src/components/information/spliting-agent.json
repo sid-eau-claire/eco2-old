@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_information_spliting_agents",
+  "info": {
+    "displayName": "splitingAgent"
+  },
+  "options": {},
+  "attributes": {
+    "profileId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "splitingPercentage": {
+      "type": "decimal"
+    }
+  }
+}

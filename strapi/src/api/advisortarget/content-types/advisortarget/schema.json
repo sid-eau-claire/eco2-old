@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "advisortargets",
+  "info": {
+    "singularName": "advisortarget",
+    "pluralName": "advisortargets",
+    "displayName": "advisortarget",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profileId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "advisorTargetIds"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "month": {
+      "type": "integer"
+    },
+    "noCoreApp": {
+      "type": "integer"
+    },
+    "coreMPE": {
+      "type": "integer"
+    },
+    "noInvestmentApp": {
+      "type": "integer"
+    },
+    "investmentAUM": {
+      "type": "integer"
+    },
+    "noSettledRevenue": {
+      "type": "integer"
+    },
+    "settledRevenue": {
+      "type": "integer"
+    },
+    "noOfSubscription": {
+      "type": "integer"
+    },
+    "noOfLicensed": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Waiting for Approval",
+        "Approved",
+        "Reject"
+      ]
+    },
+    "MPProfileId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    }
+  }
+}

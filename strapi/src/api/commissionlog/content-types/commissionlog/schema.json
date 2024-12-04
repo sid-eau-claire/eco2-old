@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commissionlogs",
+  "info": {
+    "singularName": "commissionlog",
+    "pluralName": "commissionlogs",
+    "displayName": "commissionlog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carrier": {
+      "type": "string",
+      "required": false
+    },
+    "carrierId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carrier.carrier"
+    },
+    "statementDate": {
+      "type": "date"
+    },
+    "statementAmount": {
+      "type": "decimal"
+    },
+    "bankDepositStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Statement Only",
+        "Deposit Received"
+      ]
+    },
+    "depositDate": {
+      "type": "date"
+    },
+    "payrollStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Just In",
+        "Current Pay Run",
+        "Processed",
+        "Logged - Paid",
+        "Issue"
+      ],
+      "default": "Just In"
+    },
+    "fieldPayDate": {
+      "type": "date"
+    },
+    "originalStatement": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "statementPeriodStartDate": {
+      "type": "date"
+    },
+    "statementPeriodEndDate": {
+      "type": "date"
+    },
+    "deposit": {
+      "type": "decimal"
+    },
+    "totalPostMarkupRevenue": {
+      "type": "decimal"
+    },
+    "commissionLogEntryIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::commissionlogentry.commissionlogentry",
+      "mappedBy": "commissionLogId"
+    }
+  }
+}

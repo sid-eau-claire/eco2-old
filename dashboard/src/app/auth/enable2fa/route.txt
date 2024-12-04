@@ -1,0 +1,29 @@
+// import type { NextApiRequest, NextApiResponse } from 'next';
+// import { PrismaClient } from '@prisma/client';
+// import speakeasy from 'speakeasy';
+// import QRCode from 'qrcode';
+
+// // const prisma = new PrismaClient();
+
+// export async function POST(req: NextApiRequest, res: NextApiResponse) {
+//   console.log('here')
+//     const userId = req.body.userId; // Assume you get the userId securely through authentication
+
+//     const secret = speakeasy.generateSecret();
+//     const otpauthUrl = secret.otpauth_url;
+//     // await prisma.user.update({
+//     //   where: { id: userId },
+//     //   data: { twoFactorSecret: secret.base32 },
+//     // });
+
+//     QRCode.toDataURL(otpauthUrl, (err, imageData) => {
+//       if (err) {
+//         return res.status(500).json({ message: 'Generating QR code failed' });
+//       }
+//       res.status(200).json({ imageData, secret: secret.base32 });
+//     });
+// }
+// // export async function POST(request: Request) {
+// //   console.log('here')
+// //   return Response.json({ 'abc': 'def'})
+// // }

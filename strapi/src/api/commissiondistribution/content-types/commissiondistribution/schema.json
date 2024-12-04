@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commissiondistributions",
+  "info": {
+    "singularName": "commissiondistribution",
+    "pluralName": "commissiondistributions",
+    "displayName": "commissiondistribution",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "generalSettings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.settings"
+    },
+    "rankOverrides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.rank-override"
+    },
+    "generationOverrides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.settings"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "largeCaseSettings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.settings"
+    },
+    "accelerator": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.settings"
+    }
+  }
+}

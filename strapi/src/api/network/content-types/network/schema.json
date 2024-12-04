@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "networks",
+  "info": {
+    "singularName": "network",
+    "pluralName": "networks",
+    "displayName": "network",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "oldParentId": {
+      "type": "string"
+    },
+    "oldChildId": {
+      "type": "string"
+    },
+    "parentId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "childIds"
+    },
+    "childId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "parentIds"
+    },
+    "commissionSplitFraction": {
+      "type": "decimal"
+    },
+    "deletedAt": {
+      "type": "datetime"
+    }
+  }
+}

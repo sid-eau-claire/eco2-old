@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounttransactions",
+  "info": {
+    "singularName": "accounttransaction",
+    "pluralName": "accounttransactions",
+    "displayName": "accounttransaction",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "accountId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::account.account",
+      "inversedBy": "accountTransactionIds"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "newBalance": {
+      "type": "decimal"
+    },
+    "amountHold": {
+      "type": "decimal"
+    },
+    "newHoldBalance": {
+      "type": "decimal"
+    },
+    "discriminator": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "commission",
+        "payroll",
+        "escrow release",
+        "credit",
+        "debt"
+      ],
+      "required": true
+    },
+    "statementLog": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.statement-log"
+    },
+    "reversalOfId": {
+      "type": "integer"
+    },
+    "paymentPeriodId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::paymentperiod.paymentperiod"
+    }
+  }
+}

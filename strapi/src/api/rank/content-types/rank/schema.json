@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ranks",
+  "info": {
+    "singularName": "rank",
+    "pluralName": "ranks",
+    "displayName": "rank",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "rankValue": {
+      "type": "integer"
+    },
+    "commissionCollectionMode": {
+      "type": "integer"
+    },
+    "rankCode": {
+      "type": "string"
+    },
+    "fastTrackProductionRequirement": {
+      "type": "integer"
+    },
+    "totalLifeTimeProductionRequirement": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "integer"
+    },
+    "agencyCommissionPercentage": {
+      "type": "decimal"
+    },
+    "oneYearProductionRequirement": {
+      "type": "decimal"
+    }
+  }
+}

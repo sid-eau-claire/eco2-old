@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_information_opportunities",
+  "info": {
+    "displayName": "opportunity",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "opportunityName": {
+      "type": "string"
+    },
+    "isHealthInsurance": {
+      "type": "boolean"
+    },
+    "isLifeInsurance": {
+      "type": "boolean"
+    }
+  }
+}

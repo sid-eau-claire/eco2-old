@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_information_types",
+  "info": {
+    "displayName": "ProductType",
+    "icon": "cloud",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "All",
+        "Critical Illness",
+        "Disability",
+        "Term Insurance",
+        "Universal Life",
+        "Whole Life",
+        "Travel"
+      ]
+    }
+  }
+}

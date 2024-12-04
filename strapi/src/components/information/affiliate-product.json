@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_information_affiliate_products",
+  "info": {
+    "displayName": "affiliateProduct",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "referralType": {
+      "type": "enumeration",
+      "enum": [
+        "Legal Services",
+        "Wills & Power of Attorney",
+        "Mortgages",
+        "Debt Consolidation",
+        "Home & Auto",
+        "Commercial & General Liability",
+        "Family & Corp Mediation",
+        "Accounting & Bookkeeping",
+        "Foreign Exchange",
+        "Pet Insurance"
+      ]
+    },
+    "affiliateVendor": {
+      "type": "enumeration",
+      "enum": [
+        "Sheldon Brow"
+      ]
+    },
+    "numberOfApplicants": {
+      "type": "integer"
+    }
+  }
+}

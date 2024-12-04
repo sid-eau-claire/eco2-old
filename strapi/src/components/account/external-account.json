@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_account_external_accounts",
+  "info": {
+    "displayName": "externalAccount",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "externalCode": {
+      "type": "string"
+    },
+    "account": {
+      "type": "string"
+    }
+  }
+}

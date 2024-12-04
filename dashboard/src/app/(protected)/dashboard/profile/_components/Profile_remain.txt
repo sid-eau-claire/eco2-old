@@ -1,0 +1,136 @@
+'use client'
+import PageContainer from "@/components/Containers/PageContainer";
+import Image from "next/image";
+import { useState } from "react";
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { ProfileSchema, zProfileSchema } from "@/types/profile";
+import { FaSitemap } from "react-icons/fa";
+import Basicinfo from './Basicinfo';
+import Contactinfo from './Contactinfo';
+import BankingInformation from "./Bankinginformation";
+import BeneficiaryInfo from "./Beneficiary";
+import SubscriptionSettings from "./SubscriptionSetting";
+import Administrative from "./Administrative";
+import Link from "next/link";
+import Spinner from "@/components/Common/Spinner";
+import { IoCameraOutline } from "react-icons/io5";
+import {Form} from '@/components/Form'; // Import the reusable Form component
+import ProfileData from '../_actions/updateprofile';
+import updateProfileImage from '../_actions/updateprofile';
+import { resizeImage } from '@/lib/image';
+import { useSession } from "next-auth/react";
+
+const findChanges = (oldObj: any, newObj: any, path = '') => {
+  const changes: any = {};
+  const safeOldObj = oldObj || {};
+  Object.keys(newObj).forEach((key) => {
+    const fullPath = path ? `${path}.${key}` : key;
+
+    // Directly compare values if oldObj is undefined/null or if oldObj does not have the current key
+    if (typeof oldObj !== 'object' || oldObj === null || !(key in safeOldObj)) {
+      changes[fullPath] = newObj[key];
+    } else if (typeof newObj[key] === 'object' && newObj[key] !== null && !(newObj[key] instanceof Array)) {
+      // If newObj[key] is an object (and not an array), do a deep comparison
+      const deeperChanges = findChanges(safeOldObj[key], newObj[key], fullPath);
+      if (Object.keys(deeperChanges).length > 0) {
+        // Only add deeper changes if there are any
+        Object.assign(changes, deeperChanges);
+      }
+    } else if (newObj[key] !== safeOldObj[key]) {
+      // For non-object values or arrays, compare values directly
+      changes[fullPath] = newObj[key];
+    }
+  });
+  return changes;
+};
+
+
+const Profile = ({ profile, mode }: { profile: ProfileSchema, mode: string }) => {
+  const [formData, setFormData] = useState<ProfileSchema>(profile);
+  const [isEditable, setIsEditable] = useState<boolean>(false);
+  const { data: session } = useSession();
+  const [profileImage, setProfileImage] = useState(null);
+  const [active, setActive] = useState<boolean[]>([true, true, true, true, true]);
+  const form = useForm<ProfileSchema>({resolver: zodResolver(zProfileSchema)});
+  const { register, handleSubmit, formState: {errors, isSubmitting}, reset, getValues} =  form
+  // const {formState: { errors } } = form;
+  const oldData = profile
+  // const { handleSubmit, formState: { isSubmitting, errors } } = form;
+
+  const handleFileChange = async (event: any) => {
+    if (!event?.target?.files[0]) return;
+    setProfileImage(event.target.files[0].name);
+    // const data = {}
+    const data = { dummy: Math.floor(Math.random() * 10000) };
+    const formProfileImage = new FormData();
+    const resizedImageBlob = await resizeImage(event.target.files[0], 512, 512);
+    formProfileImage.append('files.profileImage',resizedImageBlob, 'profile_image_' + profile?.id);
+    formProfileImage.append('data', JSON.stringify(data))
+    console.log(formData)
+    const result = await updateProfileImage(formProfileImage as any, profile?.id! as any);
+    console.log(result)
+  };
+
+  return (
+    <PageContainer pageName="Profile">
+      <div className="relative flex justify-between items-center z-20 h-25 md:h-16 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-black to-strokedark">
+        <Link href={`/dashboard/mynetwork/${profile?.id}`}>
+          <FaSitemap title="View Network" />
+        </Link>
+        <div className="relative z-30 mx-auto -mt-30 h-20 w-full max-w-20 rounded-full bg-white/20 p-1 backdrop-blur sm:h-24 sm:max-w-24 sm:p-3">
+          <div className="relative drop-shadow-2">
+            <Image
+              src={session?.user?.data?.profile?.profileImage?.data?.attributes?.url || '/images/user/user-0.svg'}
+              width={128}
+              height={128}
+              alt="profile"
+              className="rounded-full"
+            />
+            <label htmlFor="profile" className="absolute top-13 left-13 flex h-8.5 w-8 cursor-pointer items-center justify-center rounded-full bg-primary text-white hover:bg-opacity-90 sm:bottom-2 sm:right-2">
+              <IoCameraOutline size={20} />
+              <input
+                type="file"
+                name="profile"
+                id="profile"
+                className="sr-only"
+                onChange={handleFileChange}
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <Form
+        formData={formData}
+        mode={mode}
+        isEditable={isEditable}
+        setIsEditable={setIsEditable}
+        form={form}
+        setFormData={setFormData}
+        formComponents={{
+          Basicinfo,
+          Contactinfo,
+          BankingInformation,
+          BeneficiaryInfo,
+          SubscriptionSettings,
+          Administrative
+        }}
+      />
+      {isSubmitting && <Spinner />}
+      <div className="mb-4">
+        {Object.keys(errors).length > 0 && (
+          <div className="text-danger">
+            <p>Please correct the following errors:</p>
+            <ul>
+              {Object.entries(errors).map(([key, error]) => (
+                <li key={key}>{`${key}: ${(error as any).message || 'Error'}`}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </PageContainer>
+  );
+};
+
+export default Profile;

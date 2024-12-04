@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productcodes",
+  "info": {
+    "singularName": "productcode",
+    "pluralName": "productcodes",
+    "displayName": "productcode",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "productType": {
+      "type": "enumeration",
+      "enum": [
+        "Annuities",
+        "Critical Illness",
+        "Disability",
+        "Final Protection Non-Par Whole life Issue",
+        "Term Insurance",
+        "Universal Life",
+        "Whole Life"
+      ]
+    },
+    "commission": {
+      "type": "decimal"
+    },
+    "promoted": {
+      "type": "enumeration",
+      "enum": [
+        "New",
+        "Promoted"
+      ]
+    },
+    "carrierId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carrier.carrier"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

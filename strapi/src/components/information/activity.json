@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_information_activities",
+  "info": {
+    "displayName": "activity",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Call",
+        "Meeting",
+        "Task",
+        "Deadline",
+        "Email",
+        "Lunch"
+      ]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "datetime"
+    },
+    "endDate": {
+      "type": "datetime"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "Low",
+        "Medium",
+        "High"
+      ]
+    },
+    "location": {
+      "type": "string"
+    },
+    "videoCallLink": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Free",
+        "Busy",
+        "Out of Office"
+      ]
+    },
+    "notes": {
+      "type": "text"
+    },
+    "participants": {
+      "type": "json"
+    },
+    "createTime": {
+      "type": "datetime"
+    }
+  }
+}

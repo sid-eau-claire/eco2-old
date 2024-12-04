@@ -1,0 +1,21 @@
+export async function GET({ params }: { params: { path: string[] } }) {
+  console.log(params);
+  const pathSegments = params.path;
+  console.log(pathSegments);
+
+  // Adjust the rest of your logic to use pathSegments
+  const externalApiUrl = `${process.env.STRAPI_BACKEND_URL}/${pathSegments.join('/')}`;
+
+  // Fetch data from the external API
+  const externalApiResponse = await fetch(externalApiUrl);
+
+  // Assuming the external API returns a JPEG image
+  const blob = await externalApiResponse.blob();
+
+  return new Response(blob, {
+    status: externalApiResponse.status,
+    headers: {
+      "Content-Type": "image/jpeg",
+    },
+  });
+}

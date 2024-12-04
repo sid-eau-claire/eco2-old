@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paymentperiods",
+  "info": {
+    "singularName": "paymentperiod",
+    "pluralName": "paymentperiods",
+    "displayName": "paymentperiod",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payPeriodDate": {
+      "type": "date"
+    },
+    "accountIds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::account.account",
+      "inversedBy": "paymentPeriodIds"
+    },
+    "advisorRevenue": {
+      "displayName": "advisorRevenue",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.advisor-revenue"
+    },
+    "totalSettledPayment": {
+      "type": "decimal"
+    }
+  }
+}

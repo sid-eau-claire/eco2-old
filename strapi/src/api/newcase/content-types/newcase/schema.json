@@ -1,0 +1,157 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newcases",
+  "info": {
+    "singularName": "newcase",
+    "pluralName": "newcases",
+    "displayName": "newcase",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "writingAgentId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "newcasesIds"
+    },
+    "splitAgents": {
+      "displayName": "splitingAgent",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.spliting-agent"
+    },
+    "appInfo": {
+      "displayName": "appInfo",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.app-info"
+    },
+    "applicants": {
+      "displayName": "applicant",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.applicant"
+    },
+    "appInsProducts": {
+      "displayName": "appProduct",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.app-product"
+    },
+    "appInvProducts": {
+      "displayName": "appInvProduct",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.app-inv-product"
+    },
+    "compliance": {
+      "displayName": "compliance",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.compliance"
+    },
+    "applicationDocuments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "illustrationDocuments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "caseType": {
+      "type": "enumeration",
+      "enum": [
+        "Insurance",
+        "Investment",
+        "Affiliate"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending Review",
+        "UW/Processing",
+        "UW/Approved",
+        "Pending Pay",
+        "Paid Settled",
+        "Not Proceeded With",
+        "Declined/Postponed",
+        "Lapse/Withdrawn",
+        "Unknown"
+      ]
+    },
+    "totalEstFieldRevenue": {
+      "type": "decimal"
+    },
+    "totalAnnualPremium": {
+      "type": "decimal"
+    },
+    "totalCoverageFaceAmount": {
+      "type": "decimal"
+    },
+    "appAffiliateProduct": {
+      "displayName": "affiliateProduct",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.affiliate-product"
+    },
+    "totalAnnualAUM": {
+      "type": "decimal"
+    },
+    "estSettledDays": {
+      "type": "integer"
+    },
+    "monthlyBillingPremium": {
+      "type": "decimal"
+    },
+    "settledDate": {
+      "type": "date"
+    },
+    "commissionLogEntriesIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::commissionlogentry.commissionlogentry",
+      "mappedBy": "newCaseId"
+    },
+    "oldId": {
+      "type": "string"
+    },
+    "clientId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "stage": {
+      "type": "enumeration",
+      "enum": [
+        "Pending Review",
+        "UW/Processing",
+        "UW/Approved",
+        "Pending Pay",
+        "Paid Settled",
+        "Not Proceeded With",
+        "Declined/Postponed",
+        "Lapse/Withdrawn",
+        "Unknown"
+      ]
+    }
+  }
+}

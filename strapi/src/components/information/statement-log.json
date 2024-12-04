@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_information_statement_logs",
+  "info": {
+    "displayName": "statementLog",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "Personal",
+        "Agency",
+        "Generational"
+      ]
+    },
+    "logId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::commissionlogentry.commissionlogentry"
+    },
+    "generation": {
+      "type": "decimal"
+    },
+    "levelPercentage": {
+      "type": "decimal"
+    },
+    "commission": {
+      "type": "decimal"
+    },
+    "level": {
+      "type": "string"
+    },
+    "fieldRevenue": {
+      "type": "decimal"
+    },
+    "escrow": {
+      "type": "decimal"
+    },
+    "calculation": {
+      "type": "text"
+    },
+    "teamFieldRevenue": {
+      "type": "decimal"
+    }
+  }
+}

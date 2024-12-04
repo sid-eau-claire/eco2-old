@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_information_notes",
+  "info": {
+    "displayName": "note",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "createTime": {
+      "type": "datetime"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

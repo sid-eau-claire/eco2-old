@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paymentperiodpreviews",
+  "info": {
+    "singularName": "paymentperiodpreview",
+    "pluralName": "paymentperiodpreviews",
+    "displayName": "paymentperiodpreview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payPeriodDate": {
+      "type": "date",
+      "unique": true
+    },
+    "totalCommissionDeposited": {
+      "type": "decimal"
+    },
+    "totalPersonalAmount": {
+      "type": "decimal"
+    },
+    "totalPostMarkupRevenue": {
+      "type": "decimal"
+    },
+    "totalAgencyAmount": {
+      "type": "decimal"
+    },
+    "totalGenerationAmount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "preview",
+        "settled"
+      ]
+    },
+    "paymentPreviewIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::paymentpreview.paymentpreview",
+      "mappedBy": "paymentPeriodPreviewId"
+    }
+  }
+}

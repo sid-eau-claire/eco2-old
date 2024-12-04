@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paymentpreviews",
+  "info": {
+    "singularName": "paymentpreview",
+    "pluralName": "paymentpreviews",
+    "displayName": "paymentpreview",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalPersonalAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "totalEscrow": {
+      "type": "decimal"
+    },
+    "netDeposit": {
+      "type": "decimal"
+    },
+    "totalAgencyAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "totalGenerationAmount": {
+      "type": "decimal",
+      "default": 0
+    },
+    "statementLog": {
+      "displayName": "statementLog",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.statement-log"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "preview",
+        "settled"
+      ]
+    },
+    "totalEscrowAmount": {
+      "type": "decimal"
+    },
+    "totalFieldRevenue": {
+      "type": "decimal"
+    },
+    "payPeriodDate": {
+      "type": "date"
+    },
+    "paymentPeriodPreviewId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::paymentperiodpreview.paymentperiodpreview",
+      "inversedBy": "paymentPreviewIds"
+    },
+    "profileId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "paymentPreviewIds"
+    },
+    "totalAmount": {
+      "type": "decimal"
+    },
+    "totalTeamFieldRevenue": {
+      "type": "decimal"
+    }
+  }
+}

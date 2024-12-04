@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TXLife xmlns="http://ACORD.org/Standards/Life/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.27.00">
+  <TXLifeRequest>
+    <TransRefGUID>07803660-37AB-402F-F8C6-150001000000</TransRefGUID>
+    <TransType tc="1123"/>
+    <TransExeDate>2024-02-10</TransExeDate>
+    <TransExeTime>05:08:43-07:00</TransExeTime>
+    <OLifE>
+      <SourceInfo>
+        <CreationDate>2024-02-10</CreationDate>
+        <CreationTime>05:08:43-07:00</CreationTime>
+        <SourceInfoName>CLIEDIS-PENDING_CASE</SourceInfoName>
+        <SourceInfoComment>22</SourceInfoComment>
+      </SourceInfo>
+      <Holding id="H_V16482215">
+        <HoldingStatus tc="3"/>
+        <CurrencyTypeCode tc="124"/>
+        <Policy>
+          <PolNumber>V16482215</PolNumber>
+          <ProductCode>VONIQA</ProductCode>
+          <CarrierCode>0323</CarrierCode>
+          <PolicyStatus tc="54"/>
+          <EffDate>2023-11-28</EffDate>
+          <Life>
+            <Coverage>
+              <ProductCode>VUREFG</ProductCode>
+              <LifeCovStatus tc="54"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <CurrentAmt>100000.00</CurrentAmt>
+              <LifeParticipant PartyID="PC_V16482215_7449888549">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>11</IssueAge>
+                <IssueGender tc="2"/>
+                <ParticipantStatus tc="2"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16482215_9093955293">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16482215_9093955293">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+            </Coverage>
+            <Coverage>
+              <ProductCode>VG75CB</ProductCode>
+              <LifeCovStatus tc="54"/>
+              <IndicatorCode tc="2"/>
+              <LivesType tc="1"/>
+              <CurrentAmt>100000.00</CurrentAmt>
+              <LifeParticipant PartyID="PC_V16482215_7449888549">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>11</IssueAge>
+                <IssueGender tc="2"/>
+                <ParticipantStatus tc="2"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16482215_9093955293">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16482215_9093955293">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+            </Coverage>
+          </Life>
+          <ApplicationInfo>
+            <CWAAmt>100.00</CWAAmt>
+            <TotalCWAAmt>100.00</TotalCWAAmt>
+          </ApplicationInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_7449888549">
+            <ReqCode tc="21"/>
+            <HORequirementRefID>LS_V16482215_376285930</HORequirementRefID>
+            <RequirementDetails>MIB/IAI /// MIB/IAI</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-11-30</RequestedDate>
+            <FulfilledDate>2023-11-30</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_7449888549">
+            <ReqCode tc="11"/>
+            <HORequirementRefID>LS_V16482215_376412533</HORequirementRefID>
+            <RequirementDetails>Attending Physicians Statement /// Rapport du médecin traitant</RequirementDetails>
+            <ReqStatus tc="22"/>
+            <RequestedDate>2023-12-04</RequestedDate>
+            <RequirementStatusReason>Hello,   Please note that we have requested the client's medical file from Dr. Armani.  Regards,</RequirementStatusReason>
+            <ReqCategory tc="1"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_9093955293">
+            <ReqCode tc="125"/>
+            <HORequirementRefID>IN_AAPV16482215CWA001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:First Premium /// Première prime</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-11-30</RequestedDate>
+            <FulfilledDate>2023-11-30</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_9093955293">
+            <ReqCode tc="133"/>
+            <HORequirementRefID>IN_AAPV16482215ILLSR001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Signed Illustration /// Illustration signée</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-11-30</RequestedDate>
+            <FulfilledDate>2023-11-30</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_9093955293">
+            <ReqCode tc="166"/>
+            <HORequirementRefID>IN_AAPV16482215PAC001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Specimen cheque /// Spécimen de chèque</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-11-30</RequestedDate>
+            <FulfilledDate>2023-11-30</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_9093955293">
+            <ReqCode tc="532"/>
+            <HORequirementRefID>IN_AAPV16482215SIGNB001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Pre-Authorized Debit Form /// Débits préautorisés</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-11-30</RequestedDate>
+            <FulfilledDate>2023-11-30</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16482215_9093955293">
+            <ReqCode tc="846"/>
+            <HORequirementRefID>IN_AAPV16482215THIRD001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Third party determination /// Détermination de l'existence d'un tiers</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-11-30</RequestedDate>
+            <FulfilledDate>2023-11-30</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+        </Policy>
+      </Holding>
+      <Party id="PC_V16482215_7449888549">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>Daralyn</FirstName>
+          <LastName>Fralick-Time</LastName>
+          <BirthDate>2012-06-16</BirthDate>
+        </Person>
+      </Party>
+      <Party id="PC_V16482215_9093955293">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>Abby</FirstName>
+          <LastName>Fralick</LastName>
+        </Person>
+      </Party>
+      <Party id="PA_V16482215_107772">
+        <FullName>Eau Claire Partners Inc.- Carlton Benjamin</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16482215_146A">
+            <CompanyProducerID>107772</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16482215_146A">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>146A</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Relation OriginatingObjectID="H_V16482215" RelatedObjectID="PA_V16482215_107772" id="R_V16482215_001">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="38"/>
+        <VolumeSharePct>100.00</VolumeSharePct>
+      </Relation>
+      <Relation OriginatingObjectID="H_V16482215" RelatedObjectID="PA_V16482215_107772" id="R_V16482215_002">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="37"/>
+        <VolumeSharePct>100.00</VolumeSharePct>
+      </Relation>
+      <Holding id="H_V16483112">
+        <HoldingStatus tc="1"/>
+        <CurrencyTypeCode tc="124"/>
+        <Policy>
+          <PolNumber>V16483112</PolNumber>
+          <ProductCode>VONIQA</ProductCode>
+          <CarrierCode>0323</CarrierCode>
+          <PolicyStatus tc="1"/>
+          <EffDate>2024-02-09</EffDate>
+          <Life>
+            <Coverage>
+              <ProductCode>VURAFG</ProductCode>
+              <LifeCovStatus tc="1"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <CurrentAmt>250000.00</CurrentAmt>
+              <LifeParticipant PartyID="PC_V16483112_7551660751">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>34</IssueAge>
+                <IssueGender tc="1"/>
+                <TobaccoPremiumBasis tc="1"/>
+                <UnderwritingClass tc="1"/>
+                <ParticipantStatus tc="1"/>
+                <UnderwritingStatus tc="6"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16483112_7551660751">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16483112_7551660751">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+            </Coverage>
+            <Coverage>
+              <ProductCode>V25FA4</ProductCode>
+              <LifeCovStatus tc="1"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <CurrentAmt>750000.00</CurrentAmt>
+              <LifeParticipant PartyID="PC_V16483112_7551660751">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>34</IssueAge>
+                <IssueGender tc="1"/>
+                <TobaccoPremiumBasis tc="1"/>
+                <UnderwritingClass tc="1"/>
+                <ParticipantStatus tc="1"/>
+                <UnderwritingStatus tc="6"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16483112_7551660751">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16483112_7551660751">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+            </Coverage>
+          </Life>
+          <ApplicationInfo>
+            <CWAAmt>144.00</CWAAmt>
+            <TotalCWAAmt>144.00</TotalCWAAmt>
+          </ApplicationInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="0"/>
+            <HORequirementRefID>LS_V16483112_376828952</HORequirementRefID>
+            <RequirementDetails>Predictive analytics /// Analyse prédictive</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-13</RequestedDate>
+            <FulfilledDate>2023-12-14</FulfilledDate>
+            <ReqCategory tc="0"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="21"/>
+            <HORequirementRefID>LS_V16483112_376828955</HORequirementRefID>
+            <RequirementDetails>MIB/IAI /// MIB/IAI</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-13</RequestedDate>
+            <FulfilledDate>2023-12-13</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="3"/>
+            <HORequirementRefID>LS_V16483112_376902562</HORequirementRefID>
+            <RequirementDetails>Blood profile /// Profil sanguin</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-14</RequestedDate>
+            <FulfilledDate>2023-12-31</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="5"/>
+            <HORequirementRefID>LS_V16483112_376902568</HORequirementRefID>
+            <RequirementDetails>Urine HIV /// Urine HIV</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-14</RequestedDate>
+            <FulfilledDate>2023-12-31</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="349"/>
+            <HORequirementRefID>LS_V16483112_376902572</HORequirementRefID>
+            <RequirementDetails>Vital signs /// Signes vitaux</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-14</RequestedDate>
+            <FulfilledDate>2023-12-31</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="836"/>
+            <HORequirementRefID>IN_AAPV16483112CARI001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Servicing Advisor - Inactive Or Vested /// Conseiller service - Inactif ou dévolu</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-02-07</RequestedDate>
+            <FulfilledDate>2024-02-07</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="126"/>
+            <HORequirementRefID>IN_AAPV16483112CHNGE001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Policy Change /// Modification de contrat</RequirementDetails>
+            <ReqStatus tc="8"/>
+            <RequestedDate>2024-02-09</RequestedDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="125"/>
+            <HORequirementRefID>IN_AAPV16483112CWA001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:First Premium /// Première prime</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-02-08</RequestedDate>
+            <FulfilledDate>2024-02-08</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="133"/>
+            <HORequirementRefID>IN_AAPV16483112ILLSR001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Signed Illustration /// Illustration signée</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-13</RequestedDate>
+            <FulfilledDate>2023-12-13</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="133"/>
+            <HORequirementRefID>IN_AAPV16483112ILLSR002</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Signed Illustration /// Illustration signée</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-02-08</RequestedDate>
+            <FulfilledDate>2024-02-08</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="126"/>
+            <HORequirementRefID>IN_AAPV16483112MODIW001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Amendment to the Application without declaration o /// Modification à la proposition sans déclaration d'a</RequirementDetails>
+            <ReqStatus tc="1"/>
+            <RequestedDate>2024-02-09</RequestedDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="166"/>
+            <HORequirementRefID>IN_AAPV16483112PAC001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Specimen cheque /// Spécimen de chèque</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-13</RequestedDate>
+            <FulfilledDate>2023-12-13</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="532"/>
+            <HORequirementRefID>IN_AAPV16483112SIGNB001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Pre-Authorized Debit Form /// Débits préautorisés</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-13</RequestedDate>
+            <FulfilledDate>2023-12-13</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16483112_7551660751">
+            <ReqCode tc="846"/>
+            <HORequirementRefID>IN_AAPV16483112THIRD001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Third party determination /// Détermination de l'existence d'un tiers</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2023-12-13</RequestedDate>
+            <FulfilledDate>2023-12-13</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+        </Policy>
+      </Holding>
+      <Party id="PC_V16483112_7551660751">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>Gautam</FirstName>
+          <LastName>Arunachalam Shashikala</LastName>
+          <BirthDate>1990-05-23</BirthDate>
+        </Person>
+      </Party>
+      <Party id="PA_V16483112_109119">
+        <FullName>Eau Claire Partners Inc.- Christian Vandersterre</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16483112_146A">
+            <CompanyProducerID>109119</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16483112_146A">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>146A</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Relation OriginatingObjectID="H_V16483112" RelatedObjectID="PA_V16483112_109119" id="R_V16483112_001">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="38"/>
+        <VolumeSharePct>100.00</VolumeSharePct>
+      </Relation>
+      <Relation OriginatingObjectID="H_V16483112" RelatedObjectID="PA_V16483112_109119" id="R_V16483112_002">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="37"/>
+        <VolumeSharePct>100.00</VolumeSharePct>
+      </Relation>
+      <Holding id="H_V16485232">
+        <HoldingStatus tc="1"/>
+        <CurrencyTypeCode tc="124"/>
+        <Policy>
+          <PolNumber>V16485232</PolNumber>
+          <ProductCode>IONIQA</ProductCode>
+          <CarrierCode>0323</CarrierCode>
+          <PolicyStatus tc="1"/>
+          <EffDate>2024-02-01</EffDate>
+          <Life>
+            <Coverage>
+              <ProductCode>VURAFG</ProductCode>
+              <LifeCovStatus tc="1"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <CurrentAmt>500000.00</CurrentAmt>
+              <LifeParticipant PartyID="PC_V16485232_7084408284">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>24</IssueAge>
+                <IssueGender tc="1"/>
+                <TobaccoPremiumBasis tc="1"/>
+                <UnderwritingClass tc="1"/>
+                <ParticipantStatus tc="1"/>
+                <UnderwritingStatus tc="6"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16485232_7084408284">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16485232_7084408284">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+            </Coverage>
+            <Coverage>
+              <ProductCode>VAMG03</ProductCode>
+              <LifeCovStatus tc="1"/>
+              <IndicatorCode tc="2"/>
+              <LivesType tc="1"/>
+              <CurrentAmt>20000.00</CurrentAmt>
+              <LifeParticipant PartyID="PC_V16485232_7084408284">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>24</IssueAge>
+                <IssueGender tc="1"/>
+                <TobaccoPremiumBasis tc="1"/>
+                <UnderwritingClass tc="1"/>
+                <ParticipantStatus tc="1"/>
+                <UnderwritingStatus tc="6"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16485232_7084408284">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16485232_7084408284">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+            </Coverage>
+          </Life>
+          <ApplicationInfo>
+            <CWAAmt>139.00</CWAAmt>
+            <TotalCWAAmt>139.00</TotalCWAAmt>
+          </ApplicationInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="0"/>
+            <HORequirementRefID>LS_V16485232_378146705</HORequirementRefID>
+            <RequirementDetails>Predictive analytics /// Analyse prédictive</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-18</RequestedDate>
+            <FulfilledDate>2024-01-19</FulfilledDate>
+            <ReqCategory tc="0"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="21"/>
+            <HORequirementRefID>LS_V16485232_378146708</HORequirementRefID>
+            <RequirementDetails>MIB/IAI /// MIB/IAI</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-18</RequestedDate>
+            <FulfilledDate>2024-01-18</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="5"/>
+            <HORequirementRefID>LS_V16485232_378157695</HORequirementRefID>
+            <RequirementDetails>Urine HIV /// Urine HIV</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-19</RequestedDate>
+            <FulfilledDate>2024-01-26</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="3"/>
+            <HORequirementRefID>LS_V16485232_378157699</HORequirementRefID>
+            <RequirementDetails>Blood profile /// Profil sanguin</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-19</RequestedDate>
+            <FulfilledDate>2024-01-26</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="349"/>
+            <HORequirementRefID>LS_V16485232_378157703</HORequirementRefID>
+            <RequirementDetails>Vital signs /// Signes vitaux</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-19</RequestedDate>
+            <FulfilledDate>2024-01-26</FulfilledDate>
+            <ReqCategory tc="6"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="125"/>
+            <HORequirementRefID>IN_AAPV16485232CWA001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:First Premium /// Première prime</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-02-09</RequestedDate>
+            <FulfilledDate>2024-02-09</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="133"/>
+            <HORequirementRefID>IN_AAPV16485232ILLSR001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Signed Illustration /// Illustration signée</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-30</RequestedDate>
+            <FulfilledDate>2024-01-30</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="166"/>
+            <HORequirementRefID>IN_AAPV16485232PAC001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Specimen cheque /// Spécimen de chèque</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-18</RequestedDate>
+            <FulfilledDate>2024-01-18</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="532"/>
+            <HORequirementRefID>IN_AAPV16485232SIGNB001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Pre-Authorized Debit Form /// Débits préautorisés</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-18</RequestedDate>
+            <FulfilledDate>2024-01-18</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+          <RequirementInfo AppliesToPartyID="PC_V16485232_7084408284">
+            <ReqCode tc="846"/>
+            <HORequirementRefID>IN_AAPV16485232THIRD001</HORequirementRefID>
+            <RequirementDetails>POLICY REQUIREMENT:Third party determination /// Détermination de l'existence d'un tiers</RequirementDetails>
+            <ReqStatus tc="5"/>
+            <RequestedDate>2024-01-18</RequestedDate>
+            <FulfilledDate>2024-01-18</FulfilledDate>
+            <ReqCategory tc="2"/>
+          </RequirementInfo>
+        </Policy>
+      </Holding>
+      <Party id="PC_V16485232_7084408284">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>Igor</FirstName>
+          <LastName>Podkorytov</LastName>
+          <BirthDate>2000-07-15</BirthDate>
+        </Person>
+      </Party>
+      <Party id="PA_V16485232_R006W4">
+        <FullName>Eau Claire Partners Inc.- Iana Antonova</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16485232_146A">
+            <CompanyProducerID>R006W4</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PA_V16485232_229581">
+        <FullName>Eau Claire Partners Inc.- Irina Pisareva</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16485232_146A">
+            <CompanyProducerID>229581</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16485232_146A">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>146A</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Relation OriginatingObjectID="H_V16485232" RelatedObjectID="PA_V16485232_229581" id="R_V16485232_001">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="38"/>
+        <VolumeSharePct>100.00</VolumeSharePct>
+      </Relation>
+      <Relation OriginatingObjectID="H_V16485232" RelatedObjectID="PA_V16485232_R006W4" id="R_V16485232_002">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="37"/>
+        <VolumeSharePct>90.00</VolumeSharePct>
+      </Relation>
+      <Relation OriginatingObjectID="H_V16485232" RelatedObjectID="PA_V16485232_229581" id="R_V16485232_003">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="52"/>
+        <VolumeSharePct>10.00</VolumeSharePct>
+      </Relation>
+    </OLifE>
+  </TXLifeRequest>
+</TXLife>

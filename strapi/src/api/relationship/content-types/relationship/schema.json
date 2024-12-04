@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "relationships",
+  "info": {
+    "singularName": "relationship",
+    "pluralName": "relationships",
+    "displayName": "relationship"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

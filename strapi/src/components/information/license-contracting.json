@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_information_license_contractings",
+  "info": {
+    "displayName": "licenseContracting",
+    "icon": "clock",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subscriberStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Licensed (Pending Contracting)",
+        "Licensed & Contracted",
+        "Non-Licensed",
+        "Terminated"
+      ]
+    },
+    "contracted": {
+      "type": "boolean"
+    },
+    "dateContracted": {
+      "type": "date"
+    },
+    "licenses": {
+      "displayName": "license",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.license"
+    },
+    "contractTerminatedAt": {
+      "type": "date"
+    }
+  }
+}

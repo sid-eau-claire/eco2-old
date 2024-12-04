@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "carrierId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::carrier.carrier",
+      "inversedBy": "productIds"
+    },
+    "productcategoryId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::productcategory.productcategory"
+    },
+    "userAdded": {
+      "type": "boolean"
+    },
+    "FYC": {
+      "type": "decimal"
+    },
+    "overrideCarrierBonus": {
+      "type": "decimal"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

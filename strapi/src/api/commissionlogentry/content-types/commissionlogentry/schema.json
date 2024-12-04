@@ -1,0 +1,127 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commissionlogentries",
+  "info": {
+    "singularName": "commissionlogentry",
+    "pluralName": "commissionlogentries",
+    "displayName": "commissionlogentry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "line": {
+      "type": "integer",
+      "required": true
+    },
+    "carrier": {
+      "type": "string",
+      "required": true
+    },
+    "carrierId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carrier.carrier"
+    },
+    "writingAgent": {
+      "type": "string",
+      "required": true
+    },
+    "writingAgentId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "writingAgentPercentage": {
+      "type": "decimal",
+      "required": true
+    },
+    "splitAgent1": {
+      "type": "string"
+    },
+    "splitAgent1Id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "splitAgent1Percentage": {
+      "type": "decimal"
+    },
+    "splitAgent2": {
+      "type": "string"
+    },
+    "splitAgent2Id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "splitAgent2Percentage": {
+      "type": "decimal"
+    },
+    "splitAgent3": {
+      "type": "string"
+    },
+    "splitAgent3Id": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "splitAgent3Percentage": {
+      "type": "decimal"
+    },
+    "clientName": {
+      "type": "string",
+      "required": true
+    },
+    "policyAccountFund": {
+      "type": "string",
+      "required": true
+    },
+    "transactionDate": {
+      "type": "date",
+      "required": true
+    },
+    "productCategory": {
+      "type": "enumeration",
+      "enum": [
+        "FYC",
+        "Bonus",
+        "Insurance",
+        "Investments",
+        "Affiliates"
+      ]
+    },
+    "productDetails": {
+      "type": "string"
+    },
+    "bonus": {
+      "type": "boolean",
+      "required": true
+    },
+    "bonusMarkup": {
+      "type": "decimal"
+    },
+    "receivedRevenue": {
+      "type": "decimal",
+      "required": true
+    },
+    "postMarkupRevenue": {
+      "type": "decimal",
+      "required": true
+    },
+    "commissionLogId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::commissionlog.commissionlog",
+      "inversedBy": "commissionLogEntryIds"
+    },
+    "newCaseId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::newcase.newcase",
+      "inversedBy": "commissionLogEntriesIds"
+    }
+  }
+}

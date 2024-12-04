@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citspolicies",
+  "info": {
+    "singularName": "citspolicy",
+    "pluralName": "citspolicies",
+    "displayName": "Cits Policy",
+    "description": "Defines insurance policies with detailed attributes including policy numbers, types, amounts, and related client and agent information."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pol_number": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "line_of_business": {
+      "type": "string"
+    },
+    "product_type": {
+      "type": "string"
+    },
+    "product_code": {
+      "type": "string"
+    },
+    "carrier_code": {
+      "type": "string"
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "policy_status": {
+      "type": "string"
+    },
+    "jurisdiction": {
+      "type": "string"
+    },
+    "eff_date": {
+      "type": "date"
+    },
+    "term_date": {
+      "type": "date"
+    },
+    "paid_to_date": {
+      "type": "date"
+    },
+    "payment_mode": {
+      "type": "string"
+    },
+    "payment_amt": {
+      "type": "decimal"
+    },
+    "annual_payment_amt": {
+      "type": "decimal"
+    },
+    "primary_insured_client_id": {
+      "type": "string"
+    },
+    "relations": {
+      "type": "json"
+    },
+    "clientid": {
+      "type": "string"
+    },
+    "agentid": {
+      "type": "string"
+    },
+    "clientIds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::citsclient.citsclient",
+      "inversedBy": "citspolicies"
+    },
+    "agentIds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::citsagent.citsagent",
+      "inversedBy": "citspolicies"
+    },
+    "citsCoverageIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::citscoverage.citscoverage",
+      "mappedBy": "policyId"
+    }
+  }
+}

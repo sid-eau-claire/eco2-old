@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_information_compliances",
+  "info": {
+    "displayName": "compliance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "analysis": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "boolean"
+    },
+    "disclosure": {
+      "type": "boolean"
+    },
+    "QA": {
+      "displayName": "QA",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.qa"
+    }
+  }
+}

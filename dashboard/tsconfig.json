@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    // "typeRoots": ["./node_modules/@types", "./types"]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/**/*.tsx", "./src/**/*.ts", "./src/**/*.tsx", "src/app/(protected)/dashboard/profile/editprofile/[...user]", "src/app/(protected)/dashboard/administration/beneva/page.tsx", "src/app/(protected)/dashboard/administration/fundserv/lookup/page.bak", "src/app/(protected)/dashboard/myclient/citsclient/_components/ClientList copy1.bak", "src/app/(protected)/dashboard/myclient/citsclient/_components/ColumnFilter.bak", "src/app/(protected)/dashboard/myclient/citsclient/_components/ClientList copy.bak", "src/app/(protected)/dashboard/myclient/citsclient/_components/Client.bak", "src/app/auth/_actions/localauth.js", "src/app/api/video/[...videoId]/route.js", "src/app/api/revalidate/route.js", "src/app/api/revalidate/route.js", "src/components/Popup/PopupComponent.js", "src/app/api/refreshSession/route.js", "src/app/(protected)/dashboard/administration/updateclient/_actions/LoadCitsClientData.js" ],
+  "exclude": ["node_modules"]
+}

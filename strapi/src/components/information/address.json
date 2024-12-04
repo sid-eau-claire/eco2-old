@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_information_addresses",
+  "info": {
+    "displayName": "address",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "provinceId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::province.province"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "countryId": {
+      "type": "string",
+      "default": "2"
+    }
+  }
+}

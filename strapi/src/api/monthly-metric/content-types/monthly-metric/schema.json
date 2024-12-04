@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "monthly_metrics",
+  "info": {
+    "singularName": "monthly-metric",
+    "pluralName": "monthly-metrics",
+    "displayName": "monthlyMetric",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profileId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "yearMonth": {
+      "type": "integer",
+      "required": true
+    },
+    "metricName": {
+      "type": "string",
+      "required": true
+    },
+    "metricValue": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

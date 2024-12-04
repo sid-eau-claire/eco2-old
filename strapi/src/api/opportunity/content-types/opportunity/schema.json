@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "opportunities",
+  "info": {
+    "singularName": "opportunity",
+    "pluralName": "opportunities",
+    "displayName": "Opportunity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profileId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Insurance",
+        "Investment",
+        "Affiliate"
+      ]
+    },
+    "estAmount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Prospect",
+        "Discovery",
+        "Planning",
+        "Plan Ready",
+        "Pending Close",
+        "Paper Work",
+        "In The Mill"
+      ]
+    },
+    "clientId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::client.client"
+    },
+    "items": {
+      "displayName": "items",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.items"
+    },
+    "intent": {
+      "type": "enumeration",
+      "enum": [
+        "Good",
+        "Stuck",
+        "Lost"
+      ]
+    },
+    "activities": {
+      "displayName": "activity",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.activity"
+    },
+    "planningOptions": {
+      "type": "enumeration",
+      "enum": [
+        "Life Insurance Solutions",
+        "Retirement Planning",
+        "Kid Education"
+      ]
+    },
+    "carrierId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carrier.carrier"
+    },
+    "productCategoryId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::productcategory.productcategory"
+    },
+    "fundCategoryTypeId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fundcategorytype.fundcategorytype"
+    },
+    "notes": {
+      "displayName": "note",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.note"
+    },
+    "documents": {
+      "displayName": "file",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.file"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carriertrainings",
+  "info": {
+    "singularName": "carriertraining",
+    "pluralName": "carriertrainings",
+    "displayName": "carriertraining",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carrierId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carrier.carrier"
+    },
+    "productType": {
+      "displayName": "type",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.type"
+    },
+    "ProductItem": {
+      "displayName": "ProductItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.product-item"
+    },
+    "url": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    }
+  }
+}

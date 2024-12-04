@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_information_app_infos",
+  "info": {
+    "displayName": "appInfo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "carrierId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::carrier.carrier"
+    },
+    "appNumber": {
+      "type": "string"
+    },
+    "policyAccountNumber": {
+      "type": "string"
+    },
+    "provinceId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::province.province"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Electronic",
+        "First Piece of Business (FPB)",
+        "Paper"
+      ]
+    }
+  }
+}

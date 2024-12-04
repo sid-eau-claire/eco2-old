@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_information_roles",
+  "info": {
+    "displayName": "roles",
+    "icon": "cog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Advisor",
+        "Poweruser",
+        "Superuser",
+        "InternalStaff"
+      ]
+    }
+  }
+}

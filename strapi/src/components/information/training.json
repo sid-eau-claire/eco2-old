@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_information_trainings",
+  "info": {
+    "displayName": "training",
+    "icon": "brush",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "topic": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "productType": {
+      "type": "component",
+      "repeatable": false,
+      "component": "information.type"
+    },
+    "description": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

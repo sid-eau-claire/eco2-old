@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_information_app_roles",
+  "info": {
+    "displayName": "appRole",
+    "icon": "bold",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "commissionEdit",
+        "commissionRun",
+        "payrollEdit",
+        "newcaseEdit"
+      ]
+    }
+  }
+}

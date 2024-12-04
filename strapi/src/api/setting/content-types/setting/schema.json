@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "setting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "readyToPay": {
+      "type": "boolean"
+    },
+    "numberOfPayments": {
+      "type": "integer"
+    },
+    "progressOfPayments": {
+      "type": "integer"
+    },
+    "numberOfSettledPayments": {
+      "type": "integer"
+    },
+    "progressOfSettledPayments": {
+      "type": "integer"
+    },
+    "isSettling": {
+      "type": "boolean",
+      "default": false
+    },
+    "OKRMonthTargetSettings": {
+      "type": "json"
+    },
+    "isGeneratingPayroll": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

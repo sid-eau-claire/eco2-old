@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citsrequirements",
+  "info": {
+    "singularName": "citsrequirement",
+    "pluralName": "citsrequirements",
+    "displayName": "Cits Requirement",
+    "description": "Represents specific requirements or conditions associated with policies, including their statuses, categories, and relevant dates."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "polNumber": {
+      "type": "string"
+    },
+    "reqCode": {
+      "type": "string"
+    },
+    "hoRequirementRefID": {
+      "type": "string"
+    },
+    "requirementDetails": {
+      "type": "text"
+    },
+    "reqStatus": {
+      "type": "string"
+    },
+    "requestedDate": {
+      "type": "date"
+    },
+    "fulfilledDate": {
+      "type": "date"
+    },
+    "reqCategory": {
+      "type": "string"
+    },
+    "appliesToPartyID": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_information_app_inv_products",
+  "info": {
+    "displayName": "appInvProduct",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "registrationType": {
+      "type": "enumeration",
+      "enum": [
+        "RRSP",
+        "RRSP - Spousal",
+        "TFSA",
+        "RESP",
+        "LIRA/PENSIONS",
+        "RDSP",
+        "Non-Registered",
+        "FHSA"
+      ]
+    },
+    "categoryId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fundcategorytype.fundcategorytype"
+    },
+    "frequency": {
+      "type": "enumeration",
+      "enum": [
+        "Weekly",
+        "Bi-Weekly",
+        "Twice a month",
+        "Monthly",
+        "Quarterly"
+      ]
+    },
+    "lumpSumDeposit": {
+      "type": "decimal"
+    },
+    "feeTypeId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::investmentfeetype.investmentfeetype"
+    },
+    "estFieldRevenue": {
+      "type": "decimal"
+    },
+    "recurringDeposit": {
+      "type": "decimal"
+    },
+    "annualAUM": {
+      "type": "decimal"
+    },
+    "managementFeePercent": {
+      "type": "decimal"
+    }
+  }
+}

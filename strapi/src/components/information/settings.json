@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_information_settings",
+  "info": {
+    "displayName": "settings",
+    "icon": "attachment",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "level": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

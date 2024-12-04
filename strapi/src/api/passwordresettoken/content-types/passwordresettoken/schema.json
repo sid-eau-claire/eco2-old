@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "passwordresettokens",
+  "info": {
+    "singularName": "passwordresettoken",
+    "pluralName": "passwordresettokens",
+    "displayName": "passwordresettoken",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "token": {
+      "type": "string"
+    },
+    "expireAt": {
+      "type": "datetime"
+    }
+  }
+}

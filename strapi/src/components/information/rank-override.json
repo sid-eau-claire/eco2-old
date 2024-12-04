@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_information_rank_overrides",
+  "info": {
+    "displayName": "rankOverride",
+    "icon": "crop"
+  },
+  "options": {},
+  "attributes": {
+    "rankId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rank.rank"
+    },
+    "override": {
+      "type": "decimal"
+    }
+  }
+}

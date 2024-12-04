@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fundcategorytypes",
+  "info": {
+    "singularName": "fundcategorytype",
+    "pluralName": "fundcategorytypes",
+    "displayName": "fundcategorytype",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "carrierId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::carrier.carrier",
+      "inversedBy": "fundCategoryTypeIds"
+    }
+  }
+}

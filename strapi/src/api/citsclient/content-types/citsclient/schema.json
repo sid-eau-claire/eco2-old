@@ -1,0 +1,97 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citsclients",
+  "info": {
+    "singularName": "citsclient",
+    "pluralName": "citsclients",
+    "displayName": "Cits Client",
+    "description": "Represents clients with detailed personal and contact information."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "clientid": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "carriercode": {
+      "type": "string",
+      "required": true
+    },
+    "party_type_code": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "birth_date": {
+      "type": "date"
+    },
+    "address_type_code": {
+      "type": "string"
+    },
+    "line1": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "state_code": {
+      "type": "string"
+    },
+    "zip": {
+      "type": "string"
+    },
+    "country_code": {
+      "type": "string"
+    },
+    "phone_type_code": {
+      "type": "string"
+    },
+    "phone_country_code": {
+      "type": "string"
+    },
+    "area_code": {
+      "type": "string"
+    },
+    "dial_number": {
+      "type": "string"
+    },
+    "preferred_language": {
+      "type": "string"
+    },
+    "email_type": {
+      "type": "string"
+    },
+    "email_address": {
+      "type": "email"
+    },
+    "agentid": {
+      "type": "string"
+    },
+    "agentIds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::citsagent.citsagent",
+      "inversedBy": "citsclients"
+    },
+    "citspolicies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::citspolicy.citspolicy",
+      "mappedBy": "clientIds"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_information_rank_histories",
+  "info": {
+    "displayName": "rankHistory"
+  },
+  "options": {},
+  "attributes": {
+    "previousRank": {
+      "type": "integer"
+    },
+    "newRank": {
+      "type": "integer"
+    },
+    "isPromoted": {
+      "type": "boolean"
+    },
+    "effectiveDate": {
+      "type": "date"
+    }
+  }
+}

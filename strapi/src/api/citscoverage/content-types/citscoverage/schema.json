@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citscoverages",
+  "info": {
+    "singularName": "citscoverage",
+    "pluralName": "citscoverages",
+    "displayName": "Cits Coverage",
+    "description": "Represents insurance coverages, detailing coverage numbers, status, amounts, and participant information."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pol_number": {
+      "type": "string",
+      "required": true
+    },
+    "plan_name": {
+      "type": "string"
+    },
+    "product_code": {
+      "type": "string"
+    },
+    "cov_number": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "life_cov_status": {
+      "type": "string"
+    },
+    "life_cov_type_code": {
+      "type": "string"
+    },
+    "indicator_code": {
+      "type": "string"
+    },
+    "lives_type": {
+      "type": "string"
+    },
+    "expiry_date": {
+      "type": "date"
+    },
+    "current_amt": {
+      "type": "decimal"
+    },
+    "modal_prem_amt": {
+      "type": "decimal"
+    },
+    "annual_prem_amt": {
+      "type": "decimal"
+    },
+    "eff_date": {
+      "type": "date"
+    },
+    "tobacco_premium_basis": {
+      "type": "string"
+    },
+    "issue_gender": {
+      "type": "string"
+    },
+    "participants": {
+      "type": "json"
+    },
+    "policyId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::citspolicy.citspolicy",
+      "inversedBy": "citsCoverageIds"
+    }
+  }
+}

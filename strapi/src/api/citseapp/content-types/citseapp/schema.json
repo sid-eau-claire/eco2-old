@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citseapps",
+  "info": {
+    "singularName": "citseapp",
+    "pluralName": "citseapps",
+    "displayName": "Cits eApp",
+    "description": "Captures details about electronic applications, including policy numbers, dates, and submission types."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pol_number": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "signed_date": {
+      "type": "date"
+    },
+    "submission_date": {
+      "type": "date"
+    },
+    "submission_type": {
+      "type": "string"
+    },
+    "replacement_ind": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carriers",
+  "info": {
+    "singularName": "carrier",
+    "pluralName": "carriers",
+    "displayName": "carrier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carrierName": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "summary": {
+      "type": "text"
+    },
+    "showInDashboard": {
+      "type": "boolean"
+    },
+    "content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "title": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "boolean"
+    },
+    "bgColor": {
+      "type": "string"
+    },
+    "textColor": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "integer"
+    },
+    "products": {
+      "displayName": "product",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.product"
+    },
+    "documents": {
+      "displayName": "document",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.document"
+    },
+    "contacts": {
+      "type": "richtext"
+    },
+    "training": {
+      "displayName": "training",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.training"
+    },
+    "contracting": {
+      "type": "json"
+    },
+    "productIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "carrierId"
+    },
+    "logoUrl": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "tier": {
+      "type": "integer"
+    },
+    "defaultCarrierBonus": {
+      "type": "decimal"
+    },
+    "deactivatedAt": {
+      "type": "date"
+    },
+    "bonusMarkupPercent": {
+      "type": "decimal"
+    },
+    "fundCategoryTypeIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fundcategorytype.fundcategorytype",
+      "mappedBy": "carrierId"
+    },
+    "carrierVideoId1": {
+      "type": "string"
+    },
+    "carrierVideoId2": {
+      "type": "string"
+    },
+    "carrierVideoId3": {
+      "type": "string"
+    }
+  }
+}

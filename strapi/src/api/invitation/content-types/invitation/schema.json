@@ -1,0 +1,171 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invitations",
+  "info": {
+    "singularName": "invitation",
+    "pluralName": "invitations",
+    "displayName": "invitation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "inviteName": {
+      "type": "string"
+    },
+    "inviteEmail": {
+      "type": "email",
+      "unique": true
+    },
+    "invitePhoneNo": {
+      "type": "string",
+      "regex": "^(\\+1\\s?)?(\\(\\d{3}\\)|\\d{3})[-\\s]?\\d{3}[-\\s]?\\d{4}$"
+    },
+    "inviteLicenseStatus": {
+      "type": "enumeration",
+      "enum": [
+        "No license - studying for exam",
+        "No license - recently pass exam",
+        "License - transfer",
+        "No intention to get license"
+      ]
+    },
+    "dateSponsoredOrContracted": {
+      "type": "date"
+    },
+    "inviteCreditRating": {
+      "type": "enumeration",
+      "enum": [
+        "Above 650",
+        "Between 650 and 500",
+        "Below 500"
+      ]
+    },
+    "inviteHomeProvince": {
+      "type": "string"
+    },
+    "inviteDateOfBirth": {
+      "type": "date"
+    },
+    "inviteFirstName": {
+      "type": "string"
+    },
+    "inviteLastName": {
+      "type": "string"
+    },
+    "inviteHomeAddress": {
+      "type": "string"
+    },
+    "inviteHomeCity": {
+      "type": "string"
+    },
+    "inviteMailAddress": {
+      "type": "string"
+    },
+    "inviteMailCity": {
+      "type": "string"
+    },
+    "inviteMailProvince": {
+      "type": "string"
+    },
+    "inviteMiddleName": {
+      "type": "string"
+    },
+    "inviteProfileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "waitForExamResult",
+        "profileCompleted",
+        "eoCompleted",
+        "preScreeningCompleted",
+        "completed"
+      ],
+      "default": "new"
+    },
+    "step": {
+      "type": "integer",
+      "default": 1
+    },
+    "inviteExamResults": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "inviteCurrentLicense": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "inviteStandards": {
+      "type": "boolean",
+      "default": false
+    },
+    "invitePreviousCompany": {
+      "type": "string"
+    },
+    "inviteLicenseIntention": {
+      "type": "enumeration",
+      "enum": [
+        "Intent to have license",
+        "No intention to get license"
+      ]
+    },
+    "inviteAdvisorYear": {
+      "type": "boolean"
+    },
+    "profileStatus": {
+      "type": "boolean",
+      "default": false
+    },
+    "preScreeningStatus": {
+      "type": "boolean",
+      "default": false
+    },
+    "eoStatus": {
+      "type": "boolean",
+      "default": false
+    },
+    "licenseStatus": {
+      "type": "enumeration",
+      "enum": [
+        "active",
+        "terminated",
+        "nolicense"
+      ]
+    },
+    "previousSponsor": {
+      "type": "string"
+    },
+    "inviteNickName": {
+      "type": "string"
+    },
+    "inviter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "invitations"
+    }
+  }
+}

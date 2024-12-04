@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_information_advisor_revenues",
+  "info": {
+    "displayName": "advisorRevenue",
+    "icon": "crop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "accountId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::account.account"
+    },
+    "fieldRevenue": {
+      "type": "decimal"
+    },
+    "FLAgentIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::account.account"
+    },
+    "TRXIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accounttransaction.accounttransaction"
+    },
+    "teamFieldRevenue": {
+      "type": "decimal"
+    }
+  }
+}

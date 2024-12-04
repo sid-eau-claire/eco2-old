@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_information_files",
+  "info": {
+    "displayName": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "createTime": {
+      "type": "datetime"
+    }
+  }
+}

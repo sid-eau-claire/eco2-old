@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "frontpages",
+  "info": {
+    "singularName": "frontpage",
+    "pluralName": "frontpages",
+    "displayName": "frontpage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "active": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "announcement": {
+      "displayName": "announcement",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.announcement"
+    },
+    "event": {
+      "displayName": "events",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.events",
+      "required": false
+    }
+  }
+}

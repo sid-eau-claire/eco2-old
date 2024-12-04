@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptionplans",
+  "info": {
+    "singularName": "subscriptionplan",
+    "pluralName": "subscriptionplans",
+    "displayName": "subscriptionplan"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "stripePlanId": {
+      "type": "string"
+    }
+  }
+}

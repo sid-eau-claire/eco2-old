@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investmentfeetypes",
+  "info": {
+    "singularName": "investmentfeetype",
+    "pluralName": "investmentfeetypes",
+    "displayName": "investmentfeetype",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "feePercentage": {
+      "type": "decimal"
+    },
+    "fundCategoryTypeId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::fundcategorytype.fundcategorytype"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TXLife xmlns="http://ACORD.org/Standards/Life/2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2.35.00">
+  <TXLifeRequest>
+    <TransRefGUID>07803660-37AB-40B4-3237-A82001000000</TransRefGUID>
+    <TransType tc="1203"/>
+    <TransExeDate>2024-02-10</TransExeDate>
+    <TransExeTime>15:00:17-07:00</TransExeTime>
+    <OLifE>
+      <SourceInfo>
+        <CreationDate>2024-02-10</CreationDate>
+        <CreationTime>15:00:17-07:00</CreationTime>
+        <SourceInfoName>CLIEDIS-BOOK_OF_BUSINESS</SourceInfoName>
+        <SourceInfoComment>36</SourceInfoComment>
+      </SourceInfo>
+      <Holding id="H_AA03V16462017V164620171461467759795">
+        <Policy>
+          <PolNumber>V16462017</PolNumber>
+          <LineOfBusiness tc="1"/>
+          <ProductType tc="3"/>
+          <ProductCode>VONIQA</ProductCode>
+          <CarrierCode>0323</CarrierCode>
+          <PlanName>Universal life insurance, YRT</PlanName>
+          <PolicyStatus tc="1"/>
+          <Jurisdiction tc="108"/>
+          <EffDate>2023-02-07</EffDate>
+          <TermDate>2083-02-07</TermDate>
+          <PaidToDate>2024-03-07</PaidToDate>
+          <PaymentMode tc="4"/>
+          <PaymentAmt>46.84</PaymentAmt>
+          <AnnualPaymentAmt>562.08</AnnualPaymentAmt>
+          <PaymentMethod tc="26"/>
+          <Life>
+            <Coverage>
+              <PlanName>Universal life insurance, YRT</PlanName>
+              <ProductCode>VURAFG</ProductCode>
+              <CovNumber>0004</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="9"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2083-02-07</ExpiryDate>
+              <CurrentAmt>100000.00</CurrentAmt>
+              <ModalPremAmt>15.42</ModalPremAmt>
+              <AnnualPremAmt>185.04</AnnualPremAmt>
+              <EffDate>2023-02-07</EffDate>
+              <TobaccoPremiumBasis tc="1"/>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>40</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <LifeParticipant>
+                <ParticipantName>Harminder Maan</ParticipantName>
+                <LifeParticipantRoleCode tc="7"/>
+                <ParticipationPct>100.00</ParticipationPct>
+              </LifeParticipant>
+              <IssueGender tc="2"/>
+            </Coverage>
+            <Coverage>
+              <PlanName>Term Plus, Level, 25, Convertible</PlanName>
+              <ProductCode>V25FA3</ProductCode>
+              <CovNumber>0005</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="6"/>
+              <IndicatorCode tc="2"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2068-02-07</ExpiryDate>
+              <CurrentAmt>200000.00</CurrentAmt>
+              <ModalPremAmt>19.00</ModalPremAmt>
+              <AnnualPremAmt>228.00</AnnualPremAmt>
+              <EffDate>2023-02-07</EffDate>
+              <RenewalDate>2048-02-07</RenewalDate>
+              <TobaccoPremiumBasis tc="1"/>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>40</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <IssueGender tc="2"/>
+            </Coverage>
+            <Coverage>
+              <PlanName>Critical Illness Rider</PlanName>
+              <ProductCode>VAMG03</ProductCode>
+              <CovNumber>0006</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="33"/>
+              <IndicatorCode tc="2"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2068-02-07</ExpiryDate>
+              <CurrentAmt>20000.00</CurrentAmt>
+              <ModalPremAmt>12.42</ModalPremAmt>
+              <AnnualPremAmt>149.04</AnnualPremAmt>
+              <EffDate>2023-02-07</EffDate>
+              <TobaccoPremiumBasis tc="1"/>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>40</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462017_8780103980">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <IssueGender tc="2"/>
+            </Coverage>
+          </Life>
+          <PolicyXLat>
+            <Language tc="12"/>
+            <PlanName>Fonds en garantie sur les prêts</PlanName>
+          </PolicyXLat>
+        </Policy>
+      </Holding>
+      <Party id="PC_V16462017_8780103980">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>GAGANDEEP</FirstName>
+          <LastName>MAAN</LastName>
+          <Occupation>Policeman</Occupation>
+          <Gender tc="2"/>
+          <BirthDate>1982-08-19</BirthDate>
+        </Person>
+        <Address>
+          <AddressTypeCode tc="30"/>
+          <Line1>26 Sable Crescent</Line1>
+          <City>Whitby</City>
+          <AddressStateTC tc="108"/>
+          <Zip>L1R 1Y5</Zip>
+          <AddressCountryTC tc="2"/>
+          <PrefAddr tc="1"/>
+        </Address>
+        <Phone>
+          <PhoneTypeCode tc="1"/>
+          <CountryCode>1</CountryCode>
+          <AreaCode>647</AreaCode>
+          <DialNumber>9638037</DialNumber>
+          <PrefPhone tc="1"/>
+        </Phone>
+        <Client>
+          <PrefLanguage tc="9"/>
+        </Client>
+        <EMailAddress>
+          <EMailType tc="2"/>
+          <AddrLine>ENGG.MAAN05@GMAIL.COM</AddrLine>
+        </EMailAddress>
+      </Party>
+      <Party id="PA_V16462017_107428">
+        <FullName>Experior Financial Group Inc. - Derek Hachey</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16462017_107">
+            <CompanyProducerID>107428</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="2"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PA_V16462017_109119">
+        <FullName>Eau Claire Partners Inc.- Christian Vandersterre</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16462017_146A">
+            <CompanyProducerID>109119</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16462017_107">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>107</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16462017_146A">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>146A</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Relation OriginatingObjectID="H_AA03V16462017V164620171461467759795" RelatedObjectID="PA_V16462017_109119" id="R_V16462017_001">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="38"/>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Relation OriginatingObjectID="H_AA03V16462017V164620171461467759795" RelatedObjectID="PA_V16462017_107428" id="R_V16462017_002">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="37"/>
+        <VolumeSharePct>25.00</VolumeSharePct>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Relation OriginatingObjectID="H_AA03V16462017V164620171461467759795" RelatedObjectID="PA_V16462017_109119" id="R_V16462017_003">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="52"/>
+        <VolumeSharePct>75.00</VolumeSharePct>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Holding id="H_AA03V16462918V164629181461467759794">
+        <Policy>
+          <PolNumber>V16462918</PolNumber>
+          <LineOfBusiness tc="1"/>
+          <ProductType tc="3"/>
+          <ProductCode>VONIQA</ProductCode>
+          <CarrierCode>0323</CarrierCode>
+          <PlanName>Universal life insurance, YRT</PlanName>
+          <PolicyStatus tc="1"/>
+          <Jurisdiction tc="108"/>
+          <EffDate>2023-02-10</EffDate>
+          <TermDate>2106-02-10</TermDate>
+          <PaidToDate>2024-02-10</PaidToDate>
+          <PaymentMode tc="4"/>
+          <PaymentAmt>88.42</PaymentAmt>
+          <AnnualPaymentAmt>1061.04</AnnualPaymentAmt>
+          <PaymentMethod tc="26"/>
+          <Life>
+            <Coverage>
+              <PlanName>Universal life insurance, YRT</PlanName>
+              <ProductCode>VUREFG</ProductCode>
+              <CovNumber>0004</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="9"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2106-02-10</ExpiryDate>
+              <CurrentAmt>700000.00</CurrentAmt>
+              <ModalPremAmt>88.42</ModalPremAmt>
+              <AnnualPremAmt>1061.04</AnnualPremAmt>
+              <EffDate>2023-02-10</EffDate>
+              <TobaccoPremiumBasis tc="0"/>
+              <LifeParticipant PartyID="PC_V16462918_8242631442">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>17</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462918_0295633395">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16462918_0295633395">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <LifeParticipant>
+                <ParticipantName>Jennifer Razon</ParticipantName>
+                <LifeParticipantRoleCode tc="7"/>
+                <ParticipationPct>100.00</ParticipationPct>
+              </LifeParticipant>
+              <IssueGender tc="1"/>
+            </Coverage>
+          </Life>
+          <PolicyXLat>
+            <Language tc="12"/>
+            <PlanName>Fonds en garantie sur les prêts</PlanName>
+          </PolicyXLat>
+        </Policy>
+      </Holding>
+      <Party id="PC_V16462918_8242631442">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>ISAIAH</FirstName>
+          <LastName>RAZON</LastName>
+          <Occupation>Student</Occupation>
+          <Gender tc="1"/>
+          <BirthDate>2006-06-17</BirthDate>
+        </Person>
+        <Address>
+          <AddressTypeCode tc="30"/>
+          <Line1>208-670 Parliament Street</Line1>
+          <City>Toronto</City>
+          <AddressStateTC tc="108"/>
+          <Zip>M4X 1R4</Zip>
+          <AddressCountryTC tc="2"/>
+          <PrefAddr tc="1"/>
+        </Address>
+        <Phone>
+          <PhoneTypeCode tc="1"/>
+          <CountryCode>1</CountryCode>
+          <AreaCode>416</AreaCode>
+          <DialNumber>9857387</DialNumber>
+          <PrefPhone tc="1"/>
+        </Phone>
+        <Client>
+          <PrefLanguage tc="9"/>
+        </Client>
+        <EMailAddress>
+          <EMailType tc="2"/>
+          <AddrLine>JRAZON@LIFEINSURANCEGUIDES.CA</AddrLine>
+        </EMailAddress>
+      </Party>
+      <Party id="PC_V16462918_0295633395">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>Jennifer</FirstName>
+          <LastName>Razon</LastName>
+          <Gender tc="2"/>
+          <BirthDate>1969-12-29</BirthDate>
+        </Person>
+        <Address>
+          <AddressTypeCode tc="30"/>
+          <Line1>208-670 Parliament Street</Line1>
+          <City>Toronto</City>
+          <AddressStateTC tc="108"/>
+          <Zip>M4X 1R4</Zip>
+          <AddressCountryTC tc="2"/>
+          <PrefAddr tc="1"/>
+        </Address>
+        <Phone>
+          <PhoneTypeCode tc="1"/>
+          <CountryCode>1</CountryCode>
+          <AreaCode>416</AreaCode>
+          <DialNumber>9857387</DialNumber>
+          <PrefPhone tc="1"/>
+        </Phone>
+        <Client>
+          <PrefLanguage tc="9"/>
+        </Client>
+        <EMailAddress>
+          <EMailType tc="2"/>
+          <AddrLine>JRAZON@LIFEINSURANCEGUIDES.CA</AddrLine>
+        </EMailAddress>
+      </Party>
+      <Party id="PA_V16462918_108995">
+        <FullName>Eau Claire Partners Inc.- Jennifer Razon</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16462918_146A">
+            <CompanyProducerID>108995</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16462918_146A">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>146A</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Relation OriginatingObjectID="H_AA03V16462918V164629181461467759794" RelatedObjectID="PA_V16462918_108995" id="R_V16462918_001">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="38"/>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Relation OriginatingObjectID="H_AA03V16462918V164629181461467759794" RelatedObjectID="PA_V16462918_108995" id="R_V16462918_002">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="37"/>
+        <VolumeSharePct>100.00</VolumeSharePct>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Holding id="H_AA03V16464012V164640121461467759795">
+        <Policy>
+          <PolNumber>V16464012</PolNumber>
+          <LineOfBusiness tc="1"/>
+          <ProductType tc="3"/>
+          <ProductCode>VONIQA</ProductCode>
+          <CarrierCode>0323</CarrierCode>
+          <PlanName>Universal life insurance, YRT</PlanName>
+          <PolicyStatus tc="1"/>
+          <Jurisdiction tc="108"/>
+          <EffDate>2023-03-23</EffDate>
+          <TermDate>2088-03-23</TermDate>
+          <PaidToDate>2024-02-23</PaidToDate>
+          <PaymentMode tc="4"/>
+          <PaymentAmt>48.64</PaymentAmt>
+          <AnnualPaymentAmt>583.68</AnnualPaymentAmt>
+          <PaymentMethod tc="26"/>
+          <Life>
+            <Coverage>
+              <PlanName>Universal life insurance, YRT</PlanName>
+              <ProductCode>VURAFG</ProductCode>
+              <CovNumber>0004</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="9"/>
+              <IndicatorCode tc="1"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2088-03-23</ExpiryDate>
+              <CurrentAmt>100000.00</CurrentAmt>
+              <ModalPremAmt>13.42</ModalPremAmt>
+              <AnnualPremAmt>161.04</AnnualPremAmt>
+              <EffDate>2023-03-23</EffDate>
+              <TobaccoPremiumBasis tc="1"/>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>35</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <LifeParticipant>
+                <ParticipantName>see document POLICY FACE in the attachments</ParticipantName>
+                <LifeParticipantRoleCode tc="7"/>
+                <ParticipationPct>100.00</ParticipationPct>
+              </LifeParticipant>
+              <IssueGender tc="2"/>
+            </Coverage>
+            <Coverage>
+              <PlanName>Term Plus, Level, 25, Convertible</PlanName>
+              <ProductCode>V25FA3</ProductCode>
+              <CovNumber>0005</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="6"/>
+              <IndicatorCode tc="2"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2073-03-23</ExpiryDate>
+              <CurrentAmt>400000.00</CurrentAmt>
+              <ModalPremAmt>25.67</ModalPremAmt>
+              <AnnualPremAmt>308.04</AnnualPremAmt>
+              <EffDate>2023-03-23</EffDate>
+              <RenewalDate>2048-03-23</RenewalDate>
+              <TobaccoPremiumBasis tc="1"/>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>35</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <IssueGender tc="2"/>
+            </Coverage>
+            <Coverage>
+              <PlanName>Critical Illness Rider</PlanName>
+              <ProductCode>VAMG03</ProductCode>
+              <CovNumber>0006</CovNumber>
+              <LifeCovStatus tc="1"/>
+              <LifeCovTypeCode tc="33"/>
+              <IndicatorCode tc="2"/>
+              <LivesType tc="1"/>
+              <ExpiryDate>2073-03-23</ExpiryDate>
+              <CurrentAmt>20000.00</CurrentAmt>
+              <ModalPremAmt>9.55</ModalPremAmt>
+              <AnnualPremAmt>114.60</AnnualPremAmt>
+              <EffDate>2023-03-23</EffDate>
+              <TobaccoPremiumBasis tc="1"/>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="1"/>
+                <IssueAge>35</IssueAge>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="18"/>
+              </LifeParticipant>
+              <LifeParticipant PartyID="PC_V16464012_0204933304">
+                <LifeParticipantRoleCode tc="12"/>
+              </LifeParticipant>
+              <IssueGender tc="2"/>
+            </Coverage>
+          </Life>
+          <PolicyXLat>
+            <Language tc="12"/>
+            <PlanName>Fonds en garantie sur les prêts</PlanName>
+          </PolicyXLat>
+        </Policy>
+      </Holding>
+      <Party id="PC_V16464012_0204933304">
+        <PartyTypeCode tc="1"/>
+        <Person>
+          <FirstName>LAUREN</FirstName>
+          <LastName>VANDENBERGHE</LastName>
+          <Occupation>Cook</Occupation>
+          <Gender tc="2"/>
+          <BirthDate>1987-09-23</BirthDate>
+        </Person>
+        <Address>
+          <AddressTypeCode tc="30"/>
+          <Line1>5 John Park Line</Line1>
+          <City>Tupperville</City>
+          <AddressStateTC tc="108"/>
+          <Zip>N0P 2M0</Zip>
+          <AddressCountryTC tc="2"/>
+          <PrefAddr tc="1"/>
+        </Address>
+        <Phone>
+          <PhoneTypeCode tc="1"/>
+          <CountryCode>1</CountryCode>
+          <AreaCode>519</AreaCode>
+          <DialNumber>3123344</DialNumber>
+          <PrefPhone tc="1"/>
+        </Phone>
+        <Client>
+          <PrefLanguage tc="9"/>
+        </Client>
+        <EMailAddress>
+          <EMailType tc="2"/>
+          <AddrLine>LW85200@GMAIL.COM</AddrLine>
+        </EMailAddress>
+      </Party>
+      <Party id="PA_V16464012_107428">
+        <FullName>Experior Financial Group Inc. - Derek Hachey</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16464012_107">
+            <CompanyProducerID>107428</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="2"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PA_V16464012_109119">
+        <FullName>Eau Claire Partners Inc.- Christian Vandersterre</FullName>
+        <Organization/>
+        <Producer>
+          <CarrierAppointment AgencyAffiliationID="PM_V16464012_146A">
+            <CompanyProducerID>109119</CompanyProducerID>
+            <CarrierCode>0323</CarrierCode>
+            <CarrierName>Benevainc</CarrierName>
+            <CarrierApptStatus tc="1"/>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16464012_107">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>107</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Party id="PM_V16464012_146A">
+        <Organization/>
+        <Producer>
+          <CarrierAppointment>
+            <CompanyProducerID>146A</CompanyProducerID>
+          </CarrierAppointment>
+        </Producer>
+      </Party>
+      <Relation OriginatingObjectID="H_AA03V16464012V164640121461467759795" RelatedObjectID="PA_V16464012_109119" id="R_V16464012_001">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="38"/>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Relation OriginatingObjectID="H_AA03V16464012V164640121461467759795" RelatedObjectID="PA_V16464012_107428" id="R_V16464012_002">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="37"/>
+        <VolumeSharePct>25.00</VolumeSharePct>
+        <RelationStatus tc="1"/>
+      </Relation>
+      <Relation OriginatingObjectID="H_AA03V16464012V164640121461467759795" RelatedObjectID="PA_V16464012_109119" id="R_V16464012_003">
+        <OriginatingObjectType tc="4"/>
+        <RelatedObjectType tc="6"/>
+        <RelationRoleCode tc="52"/>
+        <VolumeSharePct>75.00</VolumeSharePct>
+        <RelationStatus tc="1"/>
+      </Relation>
+    </OLifE>
+  </TXLifeRequest>
+</TXLife>

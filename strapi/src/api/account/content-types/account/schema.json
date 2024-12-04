@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "accounts",
+  "info": {
+    "singularName": "account",
+    "pluralName": "accounts",
+    "displayName": "account",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "profileId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile",
+      "inversedBy": "accountId"
+    },
+    "name": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "decimal"
+    },
+    "hold": {
+      "type": "decimal"
+    },
+    "accountTransactionIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accounttransaction.accounttransaction",
+      "mappedBy": "accountId"
+    },
+    "paymentPeriodIds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::paymentperiod.paymentperiod",
+      "mappedBy": "accountIds"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "advisor"
+      ]
+    }
+  }
+}

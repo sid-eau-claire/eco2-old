@@ -1,0 +1,154 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "netWorth": {
+      "type": "decimal"
+    },
+    "homePhone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "clientType": {
+      "type": "enumeration",
+      "enum": [
+        "individual",
+        "household",
+        "organization"
+      ],
+      "default": "household"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "houseHoldType": {
+      "type": "string"
+    },
+    "houseHoldName": {
+      "type": "string"
+    },
+    "backgroundInformation": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "string"
+    },
+    "maritialStatus": {
+      "type": "string"
+    },
+    "citsClientId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::citsclient.citsclient"
+    },
+    "commissionLogEntryId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::commissionlogentry.commissionlogentry"
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "information.address"
+    },
+    "profileId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profile.profile"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "oldClientId": {
+      "type": "string"
+    },
+    "mobilePhone": {
+      "type": "string"
+    },
+    "oldId": {
+      "type": "string"
+    },
+    "smokingStatus": {
+      "type": "integer"
+    },
+    "deleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "mergedTo": {
+      "type": "string"
+    },
+    "source": {
+      "type": "enumeration",
+      "enum": [
+        "newcase",
+        "cits",
+        "commission"
+      ]
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "activities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.activity"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.note"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.document"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "dateOfOnboarding": {
+      "type": "date"
+    },
+    "profileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

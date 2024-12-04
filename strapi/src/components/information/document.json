@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_information_documents",
+  "info": {
+    "displayName": "document",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "documentType": {
+      "type": "enumeration",
+      "enum": [
+        "Form",
+        "Marketing documents",
+        "Guides",
+        "Advertising tools",
+        "Tools"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Application/Instructions – Savings",
+        "Application – Insurance"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "htmlLink": {
+      "type": "string"
+    },
+    "document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "productType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.type"
+    }
+  }
+}

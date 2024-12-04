@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_information_app_products",
+  "info": {
+    "displayName": "appInsProduct",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "productId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product.product"
+    },
+    "coverageFaceAmount": {
+      "type": "decimal"
+    },
+    "annualPremium": {
+      "type": "decimal"
+    },
+    "estFieldRevenue": {
+      "type": "decimal"
+    },
+    "targetPremium": {
+      "type": "decimal"
+    },
+    "applicantIndex": {
+      "type": "decimal"
+    },
+    "productCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::productcategory.productcategory"
+    }
+  }
+}

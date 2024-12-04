@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_information_banking_informations",
+  "info": {
+    "displayName": "bankingInformation"
+  },
+  "options": {},
+  "attributes": {
+    "accountNumber": {
+      "type": "string"
+    },
+    "transitNumber": {
+      "type": "string"
+    },
+    "institutionNumber": {
+      "type": "string"
+    }
+  }
+}

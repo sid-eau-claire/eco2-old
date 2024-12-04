@@ -1,0 +1,205 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "profile"
+    },
+    "firstName": {
+      "type": "string",
+      "required": false
+    },
+    "lastName": {
+      "type": "string",
+      "required": false
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "nickName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "profileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "invitations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::invitation.invitation",
+      "mappedBy": "inviter"
+    },
+    "mobilePhone": {
+      "type": "string"
+    },
+    "homePhone": {
+      "type": "string"
+    },
+    "officePhone": {
+      "type": "string"
+    },
+    "referralCode": {
+      "type": "string"
+    },
+    "rankId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rank.rank"
+    },
+    "recruitedById": {
+      "type": "string"
+    },
+    "creditScore": {
+      "type": "integer"
+    },
+    "previousCompany": {
+      "type": "string"
+    },
+    "advisorDuration": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "completed"
+      ],
+      "default": "new"
+    },
+    "settings": {
+      "type": "json"
+    },
+    "step": {
+      "type": "integer"
+    },
+    "oldId": {
+      "type": "string"
+    },
+    "oldProfileImageId": {
+      "type": "string"
+    },
+    "oldBeneficiaryId": {
+      "type": "string"
+    },
+    "externalAccount": {
+      "displayName": "externalAccount",
+      "type": "component",
+      "repeatable": true,
+      "component": "account.external-account"
+    },
+    "homeAddress": {
+      "displayName": "address",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.address"
+    },
+    "mailAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "information.address"
+    },
+    "bankingInformation": {
+      "displayName": "bankingInformation",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.banking-information"
+    },
+    "beneficiary": {
+      "displayName": "beneficiary",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.beneficiary"
+    },
+    "subscriptionSetting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "information.subscription-settings"
+    },
+    "childIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::network.network",
+      "mappedBy": "parentId"
+    },
+    "parentIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::network.network",
+      "mappedBy": "childId"
+    },
+    "administrative": {
+      "displayName": "administrative",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.administrative"
+    },
+    "rankHistory": {
+      "displayName": "rankHistory",
+      "type": "component",
+      "repeatable": true,
+      "component": "information.rank-history"
+    },
+    "openBalance": {
+      "type": "decimal",
+      "default": 0
+    },
+    "appRoles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "information.app-role"
+    },
+    "newcasesIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::newcase.newcase",
+      "mappedBy": "writingAgentId"
+    },
+    "advisorTargetIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::advisortarget.advisortarget",
+      "mappedBy": "profileId"
+    },
+    "accountId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::account.account",
+      "mappedBy": "profileId"
+    },
+    "paymentPreviewIds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::paymentpreview.paymentpreview",
+      "mappedBy": "profileId"
+    },
+    "licenseContracting": {
+      "displayName": "licenseContracting",
+      "type": "component",
+      "repeatable": false,
+      "component": "information.license-contracting"
+    }
+  }
+}

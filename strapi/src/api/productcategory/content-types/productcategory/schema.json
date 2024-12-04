@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productcategories",
+  "info": {
+    "singularName": "productcategory",
+    "pluralName": "productcategories",
+    "displayName": "productcategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "productCategoryGroup": {
+      "type": "enumeration",
+      "enum": [
+        "Insurance",
+        "Investment",
+        "Residual (Trails/Renewals)",
+        "FYC",
+        "Bonus",
+        "Affiliates"
+      ]
+    }
+  }
+}

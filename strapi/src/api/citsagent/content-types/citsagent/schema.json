@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citsagents",
+  "info": {
+    "singularName": "citsagent",
+    "pluralName": "citsagents",
+    "displayName": "Cits Agent",
+    "description": "Represents agents with their carrier codes and statuses"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "agentid": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "carriercode": {
+      "type": "string",
+      "required": true
+    },
+    "carriername": {
+      "type": "string"
+    },
+    "carrierappstatus": {
+      "type": "string"
+    },
+    "citsclients": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::citsclient.citsclient",
+      "mappedBy": "agentIds"
+    },
+    "citspolicies": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::citspolicy.citspolicy",
+      "mappedBy": "agentIds"
+    }
+  }
+}

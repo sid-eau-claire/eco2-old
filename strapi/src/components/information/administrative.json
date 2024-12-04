@@ -1,0 +1,72 @@
+{
+  "collectionName": "components_information_administratives",
+  "info": {
+    "displayName": "administrative",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fundCode": {
+      "type": "string"
+    },
+    "escrow": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "escrowHoldPercent": {
+      "type": "decimal"
+    },
+    "payPeriodPayoutThreshold": {
+      "type": "decimal",
+      "default": 50,
+      "required": false
+    },
+    "blockCommission": {
+      "type": "boolean",
+      "default": false
+    },
+    "blockLogin": {
+      "type": "boolean",
+      "default": false
+    },
+    "deactivate": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "overrideCommission": {
+      "type": "boolean",
+      "default": false
+    },
+    "CommissionOverrideFraction": {
+      "type": "decimal"
+    },
+    "Notes": {
+      "type": "string",
+      "default": " "
+    },
+    "deactivatedAt": {
+      "type": "date"
+    },
+    "escrowPersonal": {
+      "type": "boolean"
+    },
+    "escrowAgency": {
+      "type": "boolean"
+    },
+    "escrowGeneration": {
+      "type": "boolean"
+    },
+    "escrowPersonalPercentage": {
+      "type": "decimal"
+    },
+    "escrowAgencyPercentage": {
+      "type": "decimal"
+    },
+    "escrowGenerationPercentage": {
+      "type": "decimal"
+    }
+  }
+}

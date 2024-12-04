@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_information_licenses",
+  "info": {
+    "displayName": "license",
+    "icon": "connector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "licenseType": {
+      "type": "enumeration",
+      "enum": [
+        "Errors & Omissions Insurance",
+        "Life Insurance",
+        "Accident & Sickness"
+      ]
+    },
+    "licenseNumber": {
+      "type": "string"
+    },
+    "expiryDate": {
+      "type": "date"
+    },
+    "provinceId": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::province.province"
+    },
+    "licenseDocuments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
